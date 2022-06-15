@@ -172,7 +172,7 @@ header{
 }
 
 @media screen and (max-width:688px){
-    .container{
+    .section{
         width: 100%;
     }
     .player,.blog-details ,.courses {
