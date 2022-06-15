@@ -76,13 +76,7 @@ header{
     margin-left: 20px;
     font-size: 18px;
 }
-@media screen and (max-width:1000px) {
-    .players{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,100px);
-    }
-   
-}
+
 .playerAndBlog-area{
     margin-top: 40px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
@@ -176,3 +170,24 @@ header{
     border-radius:15px;
     text-align: center;
 }
+
+@media screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .player,.blog-details ,.courses {
+        grid-template-columns:repeat(1,1fr) ;
+    }
+    .player_box, .blog-box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .player-name , .blog-caption{
+        margin-left: 0px;
+    }
+    .course-content{
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
